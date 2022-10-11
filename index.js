@@ -80,7 +80,8 @@ function create(
             return retry(res);
         },
         (error) => {
-            logger(error, "response", log);
+            const { data, status } = error.response;
+            logger({ ...error, data, status }, "response", log);
             return retry(error);
         }
     );
