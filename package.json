@@ -1,6 +1,6 @@
 {
   "name": "visit-axios-retry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A axios instance having retry mechanism of three times",
   "main": "index.js",
   "scripts": {
