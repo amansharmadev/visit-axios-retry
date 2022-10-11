@@ -1,0 +1,29 @@
+{
+  "name": "visit-axios-retry",
+  "version": "1.0.0",
+  "description": "A axios instance having retry mechanism of three times",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amansharmavisit/visit-axios-retry.git"
+  },
+  "keywords": [
+    "axios",
+    "retry"
+  ],
+  "author": "Aman Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amansharmavisit/visit-axios-retry/issues"
+  },
+  "homepage": "https://github.com/amansharmavisit/visit-axios-retry#readme",
+  "dependencies": {
+    "axios": "^1.1.2"
+  }
+}
