@@ -33,6 +33,7 @@ async function logger(res, type, cb) {
  * creates a instance
  * @param {object} config axios default config object
  * @param {string} config.baseURL axios default config object
+ * @param {number} attempt how many times to retry the request then fail
  * @param {number} retryTime time in milliseconds before retrying the request
  * @param {log} log must be a function type
  * @param {retryLogic} retryLogic must be a function type
@@ -40,6 +41,7 @@ async function logger(res, type, cb) {
  */
 function create(
     config = {},
+    attempt = 3,
     retryTime = 1000,
     log = console.log,
     retryLogic = (res) => res.status !== 200
@@ -63,7 +65,7 @@ function create(
         if (!retryLogic(res)) {
             return res;
         }
-        if (res.config.attempt > 2) {
+        if (res.config.attempt > (attempt - 1)) {
             return Promise.reject(res);
         } else {
             return new Promise((resolve, _reject) => {
