@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amansharmavisit/visit-axios-retry.git"
+    "url": "git+https://github.com/amansharmadev/visit-axios-retry.git"
   },
   "keywords": [
     "axios",
@@ -20,9 +20,9 @@
   "author": "Aman Sharma",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amansharmavisit/visit-axios-retry/issues"
+    "url": "https://github.com/amansharmadev/visit-axios-retry/issues"
   },
-  "homepage": "https://github.com/amansharmavisit/visit-axios-retry#readme",
+  "homepage": "https://github.com/amansharmadev/visit-axios-retry#readme",
   "dependencies": {
     "axios": "^1.1.2"
   }
